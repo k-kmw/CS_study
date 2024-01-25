@@ -78,11 +78,10 @@
 
 - Structural Constraint
     - Cardinality ratio (1:1, 1:N, M:N)과 Participation constraints(partial, total)을 (min, max) 표기법으로 대체할 수 있다.
-    - Ex1)
-    ![Untitled (9)](https://github.com/k-kmw/CS_study/assets/100478309/9f1b0649-3393-48c0-9c3c-c38a76c75ab7)
+    - Ex1) ![Untitled (9)](https://github.com/k-kmw/CS_study/assets/100478309/9f1b0649-3393-48c0-9c3c-c38a76c75ab7)
 
-    - Ex2)
-    ![Untitled (10)](https://github.com/k-kmw/CS_study/assets/100478309/7c3f3aea-47c6-4cef-a37a-7767da85ba3d)
+    - Ex2) ![Untitled (10)](https://github.com/k-kmw/CS_study/assets/100478309/7c3f3aea-47c6-4cef-a37a-7767da85ba3d)
+
     - (0, N): Partial participation, max=N
     - (0, 1): Partial participation, max=1
     - (1, N): Total participation, max=N
@@ -106,28 +105,27 @@
 
 3. **1:1 Relationship Types**
 ![Untitled (14)](https://github.com/k-kmw/CS_study/assets/100478309/fc3c3d6a-f136-423c-8ac6-f3fc2350f4de)
-    - total participation을  찾아서 연관된 entity의 foreign key를 추가
-    - relationship type의 attribute를 추가
+- total participation을  찾아서 연관된 entity의 foreign key를 추가
+- relationship type의 attribute를 추가
 
 4. 1:N Relationship Types
 
 ![Untitled (15)](https://github.com/k-kmw/CS_study/assets/100478309/4da183db-60e7-4b61-99d1-3b3352b41eae)
 ![Untitled (16)](https://github.com/k-kmw/CS_study/assets/100478309/06da132e-9495-4b99-b48d-8e10ffb2577b)
-    - N쪽에 foreign key(1쪽에 primary key)를 추가
+- N쪽에 foreign key(1쪽에 primary key)를 추가
 
 5. M:N Relationship Types
 
 ![Untitled (17)](https://github.com/k-kmw/CS_study/assets/100478309/a6a33725-56cf-4b2c-ad00-9416d870be9d)
 ![Untitled (18)](https://github.com/k-kmw/CS_study/assets/100478309/d601d995-3952-4b30-ad76-b0cb0e548a07)
-    - M:N은 새로운 Relation을 생성해야 함
-    - 새로운 Relation에 연관된 Entity의 Primary key를 Foreign key로 추가
-    - Relationship Type의 속성 추가
+- M:N은 새로운 Relation을 생성해야 함
+- 새로운 Relation에 연관된 Entity의 Primary key를 Foreign key로 추가
+- Relationship Type의 속성 추가
 
 6. Multivalued Attributes
-
 ![Untitled (19)](https://github.com/k-kmw/CS_study/assets/100478309/2b690c85-eeb8-419d-aa18-3011e34c6507)
-    - 마찬가지로 새로운 Relation을 생성해야 함
-    - multi-valued 속성과 entity의 key 속성을 추가
+- 마찬가지로 새로운 Relation을 생성해야 함
+- multi-valued 속성과 entity의 key 속성을 추가
 
 ### Summary
 ![Untitled (20)](https://github.com/k-kmw/CS_study/assets/100478309/aa9aef0e-18b3-4b97-b291-01abb84a4903)
