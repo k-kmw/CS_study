@@ -117,15 +117,21 @@ LOST UPDATE를 방지하기 위해 TXN에 ID를 각각 부여해 자기보다 �
 ## 4. Serializable
 
 PHANTOM READ를 방지하기 위해, 직렬화(Serializable)를 적용한다.
+
  모든 트랜잭션을 일렬로 줄세워 트랜잭션끼리의 간섭을 방지할 수 있다. 그러나 정렬과정하는 과정이 쉽지 않아 성능이 가장 떨어진다.
 
 ## 정리
+
+<div align="center">
+
 |Isolation Level|Dirty Read|Lost Update|Non-repeatable Read|Phantom|
 |:---:|:---:|:---:|:---:|:---:|
-|Read Uncommited| <span style="color:red">Possible</span> |<span style="color:red">Possible</span>|<span style="color:red">Possible</span>|<span style="color:red">Possible</span>|
+|Read Uncommited| <font style="color:red">Possible</font> |<span style="color:red">Possible</span>| <span style="color:red"> Possible </span> |<span style="color:red">Possible</span>|
 |Read Commited|<span style="color:green">Prevented</span>|<span style="color:red">Possible</span>|<span style="color:red">Possible</span>|<span style="color:red">Possible</span>|
 |Repeatable Read|<span style="color:green">Prevented</span>|<span style="color:green">Prevented</span>|<span style="color:green">Prevented</span>|<span style="color:red">Possible</span>|
 |Serializable|<span style="color:green">Prevented</span>|<span style="color:green">Prevented</span>|<span style="color:green">Prevented</span>|<span style="color:green">Prevented</span>|
+
+</div>
 
 # 무결성
 
