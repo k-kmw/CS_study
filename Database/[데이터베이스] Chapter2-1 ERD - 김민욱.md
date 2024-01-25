@@ -47,6 +47,7 @@
 - ER model → (ER Diagram) Database Design → Relational database model
 
 1. Data structures
+
 ![Untitled (6)](https://github.com/k-kmw/CS_study/assets/100478309/010b73e0-2149-4a41-bea5-6bf02e47d818)
 
 2. **Integrity constraints**
@@ -59,7 +60,9 @@
         3. work_on 관계는 (employee, project)와 M:N
         
         ER 다이어그램에서는 아래와 같이 Cardinality를 표기
+
         ![Untitled (7)](https://github.com/k-kmw/CS_study/assets/100478309/d3f29fbd-e97e-441d-999c-d00d01b3810f)
+
 - Participation Constraint
     - 얼마나 많은 entity들이 relation type에 참여할 수 있는지
         - Total
@@ -77,6 +80,7 @@
     - Cardinality ratio (1:1, 1:N, M:N)과 Participation constraints(partial, total)을 (min, max) 표기법으로 대체할 수 있다.
     - Ex1)
     ![Untitled (9)](https://github.com/k-kmw/CS_study/assets/100478309/9f1b0649-3393-48c0-9c3c-c38a76c75ab7)
+
     - Ex2)
     ![Untitled (10)](https://github.com/k-kmw/CS_study/assets/100478309/7c3f3aea-47c6-4cef-a37a-7767da85ba3d)
     - (0, N): Partial participation, max=N
@@ -106,11 +110,13 @@
     - relationship type의 attribute를 추가
 
 4. 1:N Relationship Types
+
 ![Untitled (15)](https://github.com/k-kmw/CS_study/assets/100478309/4da183db-60e7-4b61-99d1-3b3352b41eae)
 ![Untitled (16)](https://github.com/k-kmw/CS_study/assets/100478309/06da132e-9495-4b99-b48d-8e10ffb2577b)
     - N쪽에 foreign key(1쪽에 primary key)를 추가
 
 5. M:N Relationship Types
+
 ![Untitled (17)](https://github.com/k-kmw/CS_study/assets/100478309/a6a33725-56cf-4b2c-ad00-9416d870be9d)
 ![Untitled (18)](https://github.com/k-kmw/CS_study/assets/100478309/d601d995-3952-4b30-ad76-b0cb0e548a07)
     - M:N은 새로운 Relation을 생성해야 함
@@ -118,6 +124,7 @@
     - Relationship Type의 속성 추가
 
 6. Multivalued Attributes
+
 ![Untitled (19)](https://github.com/k-kmw/CS_study/assets/100478309/2b690c85-eeb8-419d-aa18-3011e34c6507)
     - 마찬가지로 새로운 Relation을 생성해야 함
     - multi-valued 속성과 entity의 key 속성을 추가
