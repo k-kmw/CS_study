@@ -79,9 +79,11 @@
 - Structural Constraint
     - Cardinality ratio (1:1, 1:N, M:N)과 Participation constraints(partial, total)을 (min, max) 표기법으로 대체할 수 있다.
     - Ex1
+
     ![Untitled (9)](https://github.com/k-kmw/CS_study/assets/100478309/9f1b0649-3393-48c0-9c3c-c38a76c75ab7)
 
     - Ex2
+    
     ![Untitled (10)](https://github.com/k-kmw/CS_study/assets/100478309/7c3f3aea-47c6-4cef-a37a-7767da85ba3d)
 
     - (0, N): Partial participation, max=N
