@@ -83,7 +83,7 @@
     ![Untitled (9)](https://github.com/k-kmw/CS_study/assets/100478309/9f1b0649-3393-48c0-9c3c-c38a76c75ab7)
 
     - Ex2
-    
+
     ![Untitled (10)](https://github.com/k-kmw/CS_study/assets/100478309/7c3f3aea-47c6-4cef-a37a-7767da85ba3d)
 
     - (0, N): Partial participation, max=N
@@ -121,6 +121,7 @@
 5. M:N Relationship Types
 
 ![Untitled (17)](https://github.com/k-kmw/CS_study/assets/100478309/a6a33725-56cf-4b2c-ad00-9416d870be9d)
+
 ![Untitled (18)](https://github.com/k-kmw/CS_study/assets/100478309/d601d995-3952-4b30-ad76-b0cb0e548a07)
 - M:N은 새로운 Relation을 생성해야 함
 - 새로운 Relation에 연관된 Entity의 Primary key를 Foreign key로 추가
