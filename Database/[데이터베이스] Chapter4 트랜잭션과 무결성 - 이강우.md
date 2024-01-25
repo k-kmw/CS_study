@@ -58,8 +58,8 @@ Abort : 미 반영
 
 2. 일관성 (Consistency) 
 허용된 방식으로만 데이터를 변경해야 하는 것. 무결성 위반 시 ROLLBACK
-Unique Constraint를 걸었는데 중복된 값이 들어올 경우
-Check Constraint로 양수만 들어오게 설정했는데 계좌의 잔액이 음수가 될 경우
+- Unique Constraint를 걸었는데 중복된 값이 들어올 경우
+- Check Constraint로 양수만 들어오게 설정했는데 계좌의 잔액이 음수가 될 경우
 
 
 
