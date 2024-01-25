@@ -59,12 +59,19 @@ Abort : 미 반영
 2. 일관성 (Consistency) 
 허용된 방식으로만 데이터를 변경해야 하는 것. 무결성 위반 시 ROLLBACK
 - Unique Constraint를 걸었는데 중복된 값이 들어올 경우
+<center>
+<img width="80%" alt="e2" src="https://github.com/k-kmw/CS_study/assets/99540674/0989ad98-e0b7-4b60-a9ee-d6f5042bfec7"></center>
+
 - Check Constraint로 양수만 들어오게 설정했는데 계좌의 잔액이 음수가 될 경우
+
+<center>
+<img width="80%" alt="e1" src="https://github.com/k-kmw/CS_study/assets/99540674/3ef0575a-7a5e-48d2-bfbc-bbe3d1fe1069"></center>
 
 
 
 3. 격리성 (Isolation)
 트랜잭션이 독립적으로 일어나는 것처럼 트랜잭션 수행 시 서로 연관되지 않고 끼어들지 못하는 것. 
+
 
 4. 지속성, 영속성 (durability) 
 프로그램이 종료된 후에도 커밋 시 영구적 반영, 디스크에 저장한다.
