@@ -186,6 +186,96 @@ Rollback 연산은 데이터베이스 트랜잭션에서 수행된 모든 변경
 <div align='center'>
     <img src="image/deadlock.png" width="540px"><br>
 </div>
+
+#### 7.1.2. 로킹 기법의 구현
+실제 MySQL에서 로킹 기법이 어떻게 구현되는지 알아보자.
+
+로킹 기법은 트랜잭션에 명시하지 않아도 데이터베이스의 격리수준에 따라 자동으로 처리 된다.
+
+격리 수준은 위 내용대로 4가지가 존재하는데 다음과 같이 MySQL에서 설정할 수 있다.
+
+```sql
+-- READ UNCOMMITTED 격리 수준 설정
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+-- READ COMMITTED 격리 수준 설정
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+
+-- REPEATABLE READ 격리 수준 설정
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+
+-- SERIALIZABLE 격리 수준 설정
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+```
+
+세션 전체에 대해서 격리수준을 설정하고 싶다면 TRANSACTION 대신 SESSION을 작성하면 된다.
+
+위와 같은 격리수준 설정으로 MySQL에서는 자동으로 로킹을 처리해주지만 명시적으로 설정할 수 있는 방법도 있다.
+
+1. 로킹 함수
+함수로 로킹을 설정하여서 특정 락을 설정, 해제함. (특정 작업에 대한 로킹)
+```sql
+-- 'my_lock'이라는 이름의 락을 설정
+SELECT GET_LOCK('my_lock', 10); -- 락을 10초 동안 설정
+
+
+-- 'my_lock'이라는 이름의 락을 해제
+SELECT RELEASE_LOCK('my_lock');
+
+-- 락을 설정한 후에는 다른 세션에서는 동일한 락을 획득할 수 없음
+-- 락 획득에 성공하면 1, 실패하면 0을 반환
+```
+
+2. 쿼리문
+쿼리문에 로킹에 대한 옵션을 작성함. (특정 데이터에 대한 로킹)
+
+```sql
+-- FOR SHARE : 공유 락
+SELECT * FROM table_name WHERE condition FOR SHARE;
+
+-- FOR UPDATE : 배타적 락
+SELECT * FROM table_name WHERE condition FOR UPDATE;
+```
+
+쿼리문에 로킹 옵션을 작성하는 것은 특정 데이터에 대한 로킹을 설정한다.
+
+이는 보통 MySQL에서 자동으로 설정해주기 때문에 세심한 관리가 필요하지 않다.
+
+보통 작성자가 사용하게 되는 것은 로킹 함수인데 이는 특정 작업에 대한 로킹을 설정한다.
+
+다음 예제를 보자.
+
+```sql
+-- 세션 1
+START TRANSACTION;
+SELECT GET_LOCK('chatroom_lock', 10); -- 'chatroom_lock' 락을 10초 동안 설정
+
+INSERT INTO chat_messages (user_id, message) VALUES (1, 'Hello, everyone!');
+
+COMMIT;
+SELECT RELEASE_LOCK('chatroom_lock'); -- 'chatroom_lock' 락 해제
+
+-- 세션 2
+START TRANSACTION;
+SELECT GET_LOCK('chatroom_lock', 10); -- 'chatroom_lock' 락을 10초 동안 설정
+
+INSERT INTO chat_messages (user_id, message) VALUES (2, 'How are you?');
+
+COMMIT;
+SELECT RELEASE_LOCK('chatroom_lock'); -- 'chatroom_lock' 락 해제
+```
+
+위 예제는 채팅방에 데이터를 삽입하는 예제이다. 트랜잭션들은 데이터를 삽입하기 위해 'chatroom_lock' 이라고 하는 사용자 정의 락을 획득해야 한다.
+
+다시 말해, chatroom_lock은 일관성을 보장해야 하는 작업을 위한 락이다.
+
+세션 1의 트랜잭션이 먼저 'chatroom_lock'을 획득하면 해제하기 전까지는 세션 2가 작업하지 못하게 되는 것이다.
+
+
+
+
+
+
 #### 7.1.2. 타임 스탬프 (Time Stamp)
 내용 추가 예정
 #### 7.1.3. 낙관적 검증 기법
