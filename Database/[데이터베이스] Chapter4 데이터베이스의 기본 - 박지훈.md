@@ -2,7 +2,7 @@
 
 데이터베이스 ⇒ 규칙, 규약을 통해 구조화된 **데이터의 집합** 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/c07328b5-2aac-479c-9873-8a8a506f8b1a/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/c07328b5-2aac-479c-9873-8a8a506f8b1a/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/761c3330-0dd1-49a8-8285-99ebd2e7787b))
 
 DBMS ⇒ 데이터베이스를 **제어, 관리하는 통합 시스템**
 
@@ -18,7 +18,7 @@ DBMS를 통해서 삽입, 삭제, 수정, 조회 등을 수행할 수 있다.
 
 약한 엔터티 ⇒ 종속적임,    강한 엔터티 ⇒ 종속하는 엔터티
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/9e309e53-2b92-44f1-9b34-ad657bc94527/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/9e309e53-2b92-44f1-9b34-ad657bc94527/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/b9d26766-ae29-4bab-b48c-81345a2861ae))
 
 ## 릴레이션
 
@@ -28,7 +28,7 @@ DBMS를 통해서 삽입, 삭제, 수정, 조회 등을 수행할 수 있다.
 
 이러한 릴레이션은 관계형 DB에서 **테이블**이라고 한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/5bcd35b2-2b30-4832-b6e3-307c94b10c42/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/5bcd35b2-2b30-4832-b6e3-307c94b10c42/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/65f4422a-a7bc-4e64-b333-86008724fecf))
 
 ERD (Entity Relationship Diagram)
 
@@ -46,7 +46,7 @@ MongoDB ⇒ `도큐먼트` - `컬렉션` - `데이터베이스`
 
 Atrribute ⇒ 릴레이션에서 관리하는 구체적이고, 고유한 이름을 갖는 정보
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/53c65d84-931f-4835-ba5e-37624df133f1/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/53c65d84-931f-4835-ba5e-37624df133f1/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/391e0baa-1f8d-4b57-acf2-77992826ab1d))
 
 엔터티 = 속성의 집합
 
@@ -61,7 +61,7 @@ DB 시스템에서 **Attribute**를 가질 수 있는 모든 가능한 값의 �
 
 속성에 대한 유효한 값의 범위 또는 타입을 정의한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/edc6ec72-bef4-486d-af62-70e1f5e471ed/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/edc6ec72-bef4-486d-af62-70e1f5e471ed/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/245d8695-1bf3-4266-b4de-8cafb87cdd0f))
 
 ### 특징
 
@@ -83,7 +83,7 @@ DB 시스템에서 **Attribute**를 가질 수 있는 모든 가능한 값의 �
 
 ## 필드와 레코드
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/c670e945-670a-4e40-b8a2-02de888513d3/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/c670e945-670a-4e40-b8a2-02de888513d3/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/1b02f780-6de5-42c3-91cb-f193957df4c5))
 
 필드 ⇒ 테이블의 열을 나타낸다. 테이블의 구체적 데이터를 저장하는 구조이다. 타입을 가진다. 
 
@@ -99,7 +99,7 @@ DB 시스템에서 **Attribute**를 가질 수 있는 모든 가능한 값의 �
 
 테이블과 다른 테이블의 관계를 말함.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/46c0088f-c037-4f06-991a-9631084d9937/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/46c0088f-c037-4f06-991a-9631084d9937/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/5c9903f3-333c-4e7c-9ec8-ce3754e54399))
 
 1대1의 경우 
 
@@ -107,7 +107,7 @@ DB 시스템에서 **Attribute**를 가질 수 있는 모든 가능한 값의 �
 
 1대 1의 관계를 가진다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/aebe302e-6a4e-4817-bdfe-584e27da1a02/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/aebe302e-6a4e-4817-bdfe-584e27da1a02/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/5902bdb4-79ff-490d-90b0-4d700413b06e))
 
 1대 N의 경우
 
@@ -115,7 +115,7 @@ DB 시스템에서 **Attribute**를 가질 수 있는 모든 가능한 값의 �
 
 1대 N의 관계를 가진다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/1d3cd06a-f3a2-4f1a-971d-604fd5729d74/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/1d3cd06a-f3a2-4f1a-971d-604fd5729d74/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/e56739d6-f09d-49ae-9e52-74feddb3bf03))
 
 학생_강의 테이블의 경우
 
@@ -146,7 +146,7 @@ N대 M의 관계를 가진다.
     - 최소성은 키의 효율성을 보장한다. 불필요한 속성이 키에 포함되지 않도록 함으로써, 데이터베이스의 성능과 관리 효율성을 향상시킬 수 있다.
     - 예를 들어, '학생' 엔터티에서 '학생 ID'만으로 각 학생을 구별할 수 있다면, 이름이나 주소와 같은 추가적인 속성은 키에 포함시키지 않아야 한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/0c2911a0-0d60-4bf9-b34b-e990823c9566/Untitled.png)
+![Untitled]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c4060ba2-71b8-446b-b74e-4de25b3dddad/0c2911a0-0d60-4bf9-b34b-e990823c9566/Untitled.png](https://github.com/k-kmw/CS_study/assets/81351526/dc58b6ad-33d5-4847-8fc5-5d14a4c76c4a))
 
 후보키 ⇒ 기본키가 될 수 있는 후보이며 유일성과 최소성 동시 만족
 
