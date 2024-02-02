@@ -117,12 +117,12 @@
     <img src="image/join_result_table5.png" width="400px"><br>
 </div>
 
-
 ### 2.3. FULL OUTER JOIN
 
 - FULL OUTER JOIN은 양쪽 테이블의 모든 행을 매칭여부와 상관없이 표시한다.
 - 따라서, 행에 따라서 왼쪽 테이블, 오른쪽 테이블 관계없이 매칭되지 않으면 NULL 값이 표시된다.
 - 예제
+
   ```sql
   SELECT film.film_id, film.title, inventory.inventory_id
   FROM film
@@ -146,7 +146,6 @@
 <div align='center'>
     <img src="image/join_result_table6.png" width="400px"><br>
 </div>
-    
 
 
 ### 2.4. CROSS JOIN
@@ -164,7 +163,8 @@
 <div align='center'>
     <img src="image/join_result_table7.png" width="200px"><br>
 </div>
-    
 
+
+### 2.5. SELF JOIN
 
 ## 3. 조인 최적화
